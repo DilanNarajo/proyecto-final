@@ -37,8 +37,8 @@ function autenticarUsuario(correo, contraseña) {
   });
 }
 
-document.getElementById('formulario').addEventListener('submit', function(event) {
-  event.preventDefault();
+document.getElementById('formulario').addEventListener('submit', function(IngresoUsuario) {
+  IngresoUsuario.preventDefault();
 
   var correo = document.getElementById('correo').value;
   var contraseña = document.getElementById('contraseña').value;

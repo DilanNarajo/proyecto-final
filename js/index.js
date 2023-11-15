@@ -1,5 +1,5 @@
 let herramientas = [
-    {referencia:"001", nombre:'Tornillo', precio:"800", disponibles:"100", vendidos:"3"},
+    {referencia:"001", nombre:'Tornillo', precio:"800", disponibles:"100", vendidos:"3" },
     {referencia:"002", nombre:"Destornillador", precio:"10.000", disponibles:"100", vendidos:"15"},
     {referencia:"003", nombre:"Alicate", precio:"12.000", disponibles:"80", vendidos:"25"},
     {referencia:"004", nombre:"Matillo", precio:"25.000", disponibles:"100", vendidos:"2"},
@@ -33,6 +33,8 @@ let crearTabla= function(lista){
         fila+= "<td>"
         fila+= herramientas.vendidos;
         fila+="</td>"
+
+        fila+= "<td> <button>VER</button>"
 
         fila+="</tr>";
         stringTabla+= fila;
