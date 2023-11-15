@@ -3,13 +3,40 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./styles/login.css">
     </head>
     <body>
-        
-        <script src="" async defer></script>
+        <main id="formulario" class="formulario">
+            <head>
+                <img  src="./img/DNR Ferreteria.png" height="150px">
+                <h1>Inicio de sesion</h1>
+            </head>
+            <form method="post" name="form" action="INICIO SESION">
+                <div class="usuario">
+                  <input type="email" id="correo" required>  
+                  <label >Nombre de usuario</label>
+                </div>
+
+                <div class="usuario">
+                    <input type="password" id="contraseña" required>
+                    <label>Contraseña</label>
+                </div>
+
+                <div class="limpiar">
+                    <button onclick="cleanDatos()">Borrar</button>
+                </div>
+                    
+                <div class="recordar">
+                    <input type="submit"  value="Iniciar">¿Olvido su contraseña?
+                    <div class="registro">
+                        Quiero hacer el <a href="#">Registro</a>
+                    </div>
+                </div>    
+            </form>
+        </main>
+        <script src="./js/login.js" async defer></script>
     </body>
 </html>
