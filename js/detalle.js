@@ -22,7 +22,7 @@ const cleanDatos=()=>{
     document.getElementById('disponibles').value = disponibles;
     document.getElementById('vendidos').value = vendidos;
 });
-
+ 
 function Actualizar() {
     // Obtener los valores editados del formulario de actualización
     const referencia = document.getElementById('referenciaActualizar').value;
