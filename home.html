@@ -25,12 +25,18 @@
         </header>
 
         <main class="main">
-          <h1>Tabla de productos</h1>
-          <section>
-            <table id="tablaHerramientas">
-            </table>
-            
-
+          <div class="filtros">
+            <label for="filtroNombre">Filtrar por Nombre:</label>
+            <input type="text" id="filtroNombre">
+            <label for="filtroPrecio">Filtrar por Precio:</label>
+            <input type="number" id="filtroPrecio">
+            <button onclick="aplicarFiltros()" >Filtrar</button><br>
+            <button onclick="limpiarFiltros()" class="bt2">Limpiar</button>
+          </div>
+          <section >
+            <h1>Tabla de productos</h1>
+            <table id="tablaHerramientas"></table>
+            <div id="paginacion" class="paginacion"></div>
           </section>
         </main>
         <script src="./js/index.js" async defer></script>

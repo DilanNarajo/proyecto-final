@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+        
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/detalle.css">
+    </head>
+    <body>
+        <label>
+            <header>
+                <header>
+                    <section class="header__container">
+                      <nav>
+                        <ul class="main-nav">
+                          <li class="main-nav__item "><a href="./home.html">Home</a></li>
+                          <li class="main-nav__item "><a href="">Contacto</a></li>
+                        </ul>
+                      </nav>
+                      <img  src="./img/DNR Ferreteria.png" width="200px" height="160px" alt="Logo"/>
+                      <a class="header__container header__container--btn" href="./index.html">Cerrar</a>
+                    </section>
+                  </header>
+            </header>
+        </label>
+        
+        <form class="formulario">
+            <section>
+                <h1>Producto</h1>
+                <img src="./img/Destornilladorplanocontopetraseroparagolpear_1200x1200.webp" width="300px" height="300px">
+            </section>
+            <section class="form" >
+                <div class="usuario">
+                    <label>Referencia</label>
+                    <input id="referencia" readonly>
+                </div>    
+                <div class="usuario">
+                    <label>Nombre</label>
+                    <input id="nombre" readonly> 
+                </div>   
+                <div class="usuario">
+                    <label>Precio</label>
+                    <input id="precio" readonly>
+                </div>
+                <div class="usuario">
+                    <label>Disponibles</label>
+                    <input id="disponibles" readonly>
+                </div>
+                <div class="usuario">
+                    <label>Vendidos</label>
+                    <input id="vendidos" readonly>
+                </div>
+            </section>
+            <section class="btn">
+                
+
+            </section>
+            <section ></section>
+        </form>
+
+        <form class="form1">
+            <section>
+                <h1>Actualizar</h1>
+            </section>
+            <section class="form" >
+                <div class="usuario">
+                    <label>Referencia</label>
+                    <input id="referenciaActualizar" >
+                </div>    
+                <div class="usuario">
+                    <label>Nombre</label>
+                    <input id="nombreActualizar" > 
+                </div>   
+                <div class="usuario">
+                    <label>Precio</label>
+                    <input id="precioActualizar" >
+                </div>
+                <div class="usuario">
+                    <label>Disponibles</label>
+                    <input id="disponiblesActualizar" >
+                </div>
+                <div class="usuario">
+                    <label>Vendidos</label>
+                    <input id="vendidosActualizar" >
+                </div>
+            </section>
+            <section class="btn">
+                <div class="limpiar">
+                    <button onclick="Actualizar()" >Actualizar</button>
+                    <Button onclick="cleanDatos()">Limpiar</Button>
+                </div>
+
+            </section>
+            <section ></section>
+        </form>
+        <script src="./js/detalle.js" async defer></script>
+    </body>
+</html>
